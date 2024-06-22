@@ -43,7 +43,7 @@ export function Blog(props: { blog: BlogInterface }) {
           </CardContent>
           <CardFooter>
             <p className="text-sm text-slate-400">
-              {new Date(user.updatedAt).toDateString()}
+              {user.updatedAt ? new Date(user.updatedAt).toDateString() : ""}
             </p>
           </CardFooter>
         </Card>
