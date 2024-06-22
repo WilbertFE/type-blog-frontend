@@ -12,7 +12,7 @@ export const useUser = (username: string | undefined) => {
         throw new Error();
       }
       const response = await axios.get(
-        `http://localhost:6005/api/users/${username}`,
+        `https://type-blog-backend.vercel.app/api/users/${username}`,
         { withCredentials: true }
       );
       const result = response.data;

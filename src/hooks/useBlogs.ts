@@ -7,7 +7,9 @@ export const useBlogs = () => {
 
   const getBlogs = async () => {
     try {
-      const response = await axios.get("http://localhost:6005/api/blogs");
+      const response = await axios.get(
+        "https://type-blog-backend.vercel.app/api/blogs"
+      );
       const result = response.data;
       setBlogs(result);
     } catch (err: unknown) {

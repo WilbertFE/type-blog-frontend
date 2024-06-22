@@ -7,7 +7,7 @@ export function useLogin() {
 
   const checkLogin = async () => {
     try {
-      await axios.get("http://localhost:6005/api/auth", {
+      await axios.get("https://type-blog-backend.vercel.app/api/auth", {
         withCredentials: true,
       });
       setLogin(true);

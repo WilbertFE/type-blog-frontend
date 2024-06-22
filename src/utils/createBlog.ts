@@ -11,7 +11,7 @@ export const createBlog = async (e: React.FormEvent<HTMLFormElement>) => {
   };
   try {
     const response = await axios.post(
-      "http://localhost:6005/api/blogs",
+      "https://type-blog-backend.vercel.app/api/blogs",
       JSON.stringify(blogData),
       { withCredentials: true, headers: { "Content-Type": "application/json" } }
     );

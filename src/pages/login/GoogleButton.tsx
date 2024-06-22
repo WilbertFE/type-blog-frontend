@@ -3,7 +3,10 @@ import { FcGoogle } from "react-icons/fc";
 
 export function GoogleButton() {
   const handleGoogleLogin = () => {
-    window.open("http://localhost:6005/auth/google/callback", "_self");
+    window.open(
+      "https://type-blog-backend.vercel.app/auth/google/callback",
+      "_self"
+    );
   };
   return (
     <Button

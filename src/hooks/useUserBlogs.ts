@@ -11,7 +11,7 @@ export const useUserBlogs = (username: string | undefined) => {
         throw new Error();
       }
       const response = await axios.get(
-        `http://localhost:6005/api/blogs/${username}`
+        `https://type-blog-backend.vercel.app/api/blogs/${username}`
       );
       const result = response.data;
       setBlogs(result);

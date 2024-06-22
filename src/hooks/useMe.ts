@@ -8,9 +8,12 @@ export const useMe = () => {
 
   const getUserData = async () => {
     try {
-      const response = await axios.get("http://localhost:6005/api/users/me", {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        "https://type-blog-backend.vercel.app/api/users/me",
+        {
+          withCredentials: true,
+        }
+      );
       const result = response.data;
       setUser(result);
       setLoading(false);
