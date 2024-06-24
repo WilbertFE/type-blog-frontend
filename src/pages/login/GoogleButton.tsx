@@ -15,7 +15,7 @@ export function GoogleButton() {
     try {
       const resultsFromGoogle = await signInWithPopup(auth, provider);
       const res = await axios.post(
-        "http://localhost:6005/api/auth/google",
+        "https://type-blog-backend.vercel.app/api/auth/google",
         JSON.stringify({
           displayName: resultsFromGoogle.user.displayName,
           email: resultsFromGoogle.user.email,
