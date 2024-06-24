@@ -45,7 +45,7 @@ export function GoogleButton() {
     >
       <FcGoogle size={24} />
       <span className="text-sm group-hover:text-light-config text-slate-600">
-        Sign in dengan google
+        Sign in with google
       </span>
     </Button>
   );
